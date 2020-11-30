@@ -30,11 +30,15 @@ function tictac() {
     let hexaColor = `#${colorHour}${colorMinute}${colorSecond}`;
     document.body.style.backgroundColor = hexaColor;
 
-    setTimeout(() => {
-        tictac();
-    }, 1000);
+    // setTimeout(() => {
+    //     tictac();
+    // }, 1000);
 
 }
 
-tictac();
+setInterval(() => {
+    tictac();
+}, 1000)
+
+setInterval();
 
